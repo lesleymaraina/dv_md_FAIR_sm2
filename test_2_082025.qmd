@@ -1,0 +1,322 @@
+---
+title: "Interpreting Scientific Figures Through FAIR Principles"
+author: "<br><br><span style='font-size:25px;'><strong>Lesley Chapman Hannah, Ph.D., M.S.</strong></span><br>College of Graduate Studies<br>Northeast Ohio Medical University"
+
+format: 
+  revealjs:
+    #theme: solarized
+    css: style.css
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/Flame.jpg
+    #css: styles.css
+    
+---
+
+## <span style="font-size:80%">Lecture Overview</span> {.smaller}
+
+- Discuss how FAIR principles enhance clarity and understanding of scientific visuals
+
+- Framework for evaluating FAIR principles in the literature
+
+- Overview of applied use cases
+
+::: footer
+
+:::
+
+
+## <span style="font-size:80%">Applying FAIR Frameworks to Literature Evaluation and Synthesis Process</span> {.smaller}
+
+- Figures and plots are lasting scientific records:
+
+  - Scientific Journals/Publications
+
+  - Trial dossiers
+
+  - Clinical guidelines
+
+- Readers should be able to trace the figure back to the following in order to validate findings:
+
+  - Samples and measurable features used in dataset
+
+  - Processing steps used to analyze data to generate figures
+
+  - Statistical used to generate data points and uncertainty bands within the plot/figure
+
+- Lack of metadata can lead to figures that’re unverifiable
+
+::: footer
+
+:::
+
+
+## <span style="font-size:80%">Applying FAIR Frameworks to Literature Evaluation and Synthesis Process</span> {.smaller}
+
+Consider: Is the science understandable?
+
+  - the core message must be recoverable without guessing
+
+  - visual hierarchy must reveal what matters biologically
+
+    - Strong effects are visually prioritized
+
+    - Contextual or background elements fade into secondary prominence
+    
+    - Uncertainty and variability are visibly encoded, not hidden
+
+  - Common hierarchy strategies
+
+    - Color brightness to emphasize biomarkers with meaningful effect sizes
+    
+    - Line thickness for pathways with stronger evidence
+    
+    - Spatial grouping to reflect biological modules
+    
+    - domain expert should be able to articulate the clinical or mechanistic insight
+
+
+::: footer
+
+:::
+
+
+## <span style="font-size:80%">Evaluating Visuals for Reusability and Scientific Rigor</span> {.smaller}
+
+- Clarity: Can we see the scientific signal?
+
+- Context: Do we know what we’re looking at?
+
+- Accessibility: Who can interpret this accurately?
+
+- FAIRness: Can others find, verify, and reuse it later?
+
+
+::: footer
+
+:::
+
+
+
+## <span style="font-size:80%">Evaluating Visuals for Reusability and Scientific Rigor</span> {.smaller}
+
+::: columns
+::: {.column width="50%"}
+Clarity: Can we see the scientific signal?
+
+- Focus on signal vs. noise:
+
+  - Are effect sizes visible?
+
+  - Are uncertainty measures present?
+  
+  - Is the visual hierarchy guiding attention to key findings?
+
+- Figure
+
+  - Effect sizes are encoded clearly (dots along x‑axis)
+
+  - Weight/precision is encoded via dot size and y‑position — making signal (effect size + uncertainty/weight) readily visible
+
+
+:::
+
+::: {.column width="50%"}
+![](images/figure_1.png){.border .border-thick}
+
+::: incremental
+
+
+:::
+:::
+<span style="font-size:50%">Fitzgerald, KG, et al (2025). Research Synthesis Methods.DOI: https://doi.org/10.1017/rsm.2025.4</span>
+:::
+::: footer
+:::
+
+## <span style="font-size:80%">Evaluating Visuals for Reusability and Scientific Rigor</span> {.smaller}
+
+::: columns
+::: {.column width="50%"}
+Context: Do we know what we’re looking at?
+
+A figure is incomplete without:
+
+  - Units (mg/dL, TPM, odds ratio)
+
+  - Sample/tumor type
+
+  - Study identifiers (e.g., GSE####)
+
+Figure: Expression data from TCGA correlates well with patient-specific RNA-Seq data
+
+  - Sample/tissue type and units are provided
+
+  - Senior authors listed at the top of two sub-panel images
+
+  - Figures do not embed a GEO / GSE / dataset‑ID in the figure legend
+
+:::
+
+::: {.column width="50%"}
+![](images/figure_2.jpg){.border .border-thick}
+
+::: incremental
+
+
+:::
+:::
+<span style="font-size:50%">Frentzen, A., et. al. Front. Genet., 11 January 2023</span>
+:::
+::: footer
+:::
+
+## <span style="font-size:80%">Evaluating Visuals for Reusability and Scientific Rigor</span> {.smaller}
+
+::: columns
+::: {.column width="50%"}
+Accessibility — Who can interpret this accurately?
+
+Visual can be understood by:
+
+  - Machine-readable tools for automation
+
+  - Those without domain-specialized software
+
+  - Figures should avoid bias and exclusion
+
+Figure: Expression data from TCGA correlates well with patient-specific RNA-Seq data
+
+  - Sample/tissue type and units are provided
+
+  - Senior authors listed at the top of two sub-panel images
+
+  - Figures do not embed a GEO / GSE / dataset‑ID in the figure legend
+
+:::
+
+::: {.column width="50%"}
+![](images/figure_3.png){.border .border-thick}
+
+::: incremental
+
+
+:::
+:::
+<span style="font-size:50%">Frentzen, A., et. al. Front. Genet., 11 January 2023</span>
+:::
+::: footer
+:::
+
+
+
+## <span style="font-size:80%">Evaluating Visuals for Reusability and Scientific Rigor</span> {.smaller}
+
+
+::: columns
+::: {.column width="50%" style="font-size: 15pt;"}
+FAIRness: Can others find, verify, and reuse it later?
+:::
+
+::: {.column width="10%" style="font-size: 15pt;"}
+| FAIR Principle | Indicators in Figures |
+|-----------|--------------|
+| `Findable` | Dataset ID, DOI, GitHub link in caption |
+| `Accessible` | File type supports extraction, metadata reference |
+| `Interoperable` | Standardized gene/protein names, units |
+| `Reusable` | Standardized gene/protein names, units |
+:::
+
+:::
+::: footer
+:::
+
+
+
+
+
+## <span style="font-size:80%">Comparative Case Studies: Applying FAIR to Figures</span> {.smaller}
+
+::: columns
+::: {.column width="50%"}
+Figure Summary: Bioinformatic analysis identifies ZC3H4 as potentially having a previously unknown role in DNA repair and cell senescence
+
+:::
+
+::: {.column width="50%"}
+![](images/figure_4.jpg){.border .border-thick}
+
+::: incremental
+
+
+:::
+:::
+<span style="font-size:50%">Frey et al., Science Advances (2025). DOI: 10.1126/sciadv.adt8346</span>
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Comparative Case Studies: Applying FAIR to Figures</span> {.smaller}
+
+
+::: columns
+::: {.column width="50%" style="font-size: 15pt;"}
+| Concept | Indicators in Figures |
+|-----------|--------------|
+| `Clarity` | Node size encodes gene-set size; edges (links) represent overlap between gene-sets — so you can visually assess which sets share many genes. The network layout groups similar gene-sets (pathways) so related functional themes cluster visually. |
+| `Context` | Instead of simply listing enriched pathways in a long table, the network situates them in relation to each other — emphasizing functional redundancy or relatedness. The figure helps answer: which functional themes emerge when you consider overlap among enriched gene-sets? |
+
+:::
+
+::: {.column width="50%" style="font-size: 15pt;"}
+![](images/figure_4.jpg){.border .border-thick}
+:::
+<span style="font-size:50%">Frey et al., Science Advances (2025). DOI: 10.1126/sciadv.adt8346</span>
+
+:::
+::: footer
+:::
+
+## <span style="font-size:80%">Comparative Case Studies: Applying FAIR to Figures</span> {.smaller}
+
+
+::: columns
+::: {.column width="50%" style="font-size: 15pt;"}
+| Concept | Indicators in Figures |
+|-----------|--------------|
+| `Accessibility` | For someone unfamiliar with the raw gene list, the network provides an at-a-glance overview of major functional themes.Graph simplifies interpretation by visually clustering related sets rather than hundreds of pathway names.|
+| `FAIRness / Reusability` | Notes from legend and details within the article provides sufficient methodological detail to allow reuse of the workflow on new gene-lists.  |
+
+:::
+
+::: {.column width="50%" style="font-size: 15pt;"}
+![](images/figure_4.jpg){.border .border-thick}
+:::
+<span style="font-size:50%">Frey et al., Science Advances (2025). DOI: 10.1126/sciadv.adt8346</span>
+
+:::
+::: footer
+:::
+
+
+
+
+
+
+
+
+
+## <span style="font-size:80%">Summary</span> {.smaller}
+
+- Figures are lasting scientific evidence — they must be interpretable, traceable, and reusable across publications, regulatory submissions, and clinical decisions
+
+- FAIR-aligned visuals ensure that signal is visible, context is explicit, and metadata enables reproducibility — reducing ambiguity and error in scientific interpretation
+
+-By applying Clarity, Context, Accessibility, and FAIRness as a framework, we can strengthen both scientific rigor and real-world usability of biomedical discoveries
+
+
+::: footer
+:::
