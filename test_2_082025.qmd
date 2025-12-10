@@ -187,13 +187,7 @@ Visual can be understood by:
 
   - Figures should avoid bias and exclusion
 
-Figure: Expression data from TCGA correlates well with patient-specific RNA-Seq data
 
-  - Sample/tissue type and units are provided
-
-  - Senior authors listed at the top of two sub-panel images
-
-  - Figures do not embed a GEO / GSE / dataset‑ID in the figure legend
 
 :::
 
@@ -315,7 +309,7 @@ Figure Summary: Bioinformatic analysis identifies ZC3H4 as potentially having a 
 
 - FAIR-aligned visuals ensure that signal is visible, context is explicit, and metadata enables reproducibility — reducing ambiguity and error in scientific interpretation
 
--By applying Clarity, Context, Accessibility, and FAIRness as a framework, we can strengthen both scientific rigor and real-world usability of biomedical discoveries
+- By applying Clarity, Context, Accessibility, and FAIRness as a framework, we can strengthen both scientific rigor and real-world usability of biomedical discoveries
 
 
 ::: footer
